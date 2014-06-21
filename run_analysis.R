@@ -56,7 +56,7 @@ for(i in 1:6){
   } 
 }
 colnames(tidydata)<-names(mergedData)[3:563]
-activity_tidydata<-rep(activitylabel[,2],times=30)
+activity_tidydata<-rep(activitylabel[,2],each=30)
 subject_tidydata<-rep(c(1:30),times=6)
 tidydata<-cbind(subject_tidydata,tidydata)
 tidydata<-cbind(activity_tidydata,tidydata)
